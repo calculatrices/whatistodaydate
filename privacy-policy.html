@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+<head>
+<base href=".">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy - What is today date</title>
+<meta http-equiv="Content-Language" content="en" />
+<meta name="description" content="Read our Privacy Policy to understand how What is today date collects, uses, and protects your personal information. Your privacy is important to us."/>
+<meta name="keywords" content="privacy policy, data privacy, personal information, data protection, website privacy, user data, What is today date privacy" />
+<style>
+:root {
+  --primary: #1a237e;     /* Deeper blue */
+  --secondary: #3f51b5;   /* Rich indigo */
+  --accent: #ff4081;      /* Vibrant pink */
+  --light: #f5f5f5;       /* Lighter gray */
+  
+  /* Add new color variables */
+  --gradient-start: #1a237e;
+  --gradient-end: #3f51b5;
+  --text-primary: #2c3e50;
+  --card-shadow: rgba(0,0,0,0.12);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.6;
+  color: var(--primary);
+  background-color: var(--light);
+}
+
+/* Header & Logo */
+.header {
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  padding: 1rem;
+  color: white;
+  position: relative; /* For mobile menu positioning */
+  z-index: 1001; /* Ensure header is above menu */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.logo svg {
+  width: 40px;
+  height: 40px;
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Navigation */
+.nav {
+  background: var(--light);
+  padding: 1rem;
+  text-align: center;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  justify-content: center;
+  padding: 0;
+}
+
+.nav-link {
+  color: var(--primary);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.nav-link:hover {
+  background: var(--secondary);
+  color: white;
+}
+
+/* Mobile Menu */
+.menu-toggle {
+  display: none; /* Hidden by default */
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  position: absolute; /* Position relative to header */
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Main Content */
+.main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px var(--card-shadow);
+}
+
+.main h1, .main h2 {
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+
+.main p, .main ul {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.main ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.main li {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+.footer {
+  background: var(--primary);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+  z-index: 1000; /* Ensure toggle is above other content */
+}
+
+.dark-mode-toggle:hover {
+  transform: scale(1.1);
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background: #121212;
+  color: #fafafa;
+}
+
+body.dark-mode .main {
+  background: #1e1e1e;
+  color: #fafafa;
+}
+
+body.dark-mode .nav {
+  background: #1e1e1e;
+}
+
+body.dark-mode .nav-link {
+  color: #ffffff;
+}
+
+body.dark-mode .main h1, body.dark-mode .main h2 {
+  color: var(--accent);
+}
+
+body.dark-mode .main p, body.dark-mode .main ul {
+  color: #fafafa;
+}
+
+  /* Dropdown Menu Styles */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a {
+    color: var(--primary);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+  }
+
+  .dropdown-content a:hover {
+    background: var(--secondary);
+    color: white;
+    padding-left: 24px;
+  }
+
+  body.dark-mode .dropdown-content {
+    background: #2a2a2a;
+  }
+
+  body.dark-mode .dropdown-content a {
+    color: #ffffff;
+  }
+
+@media (max-width: 768px) {
+  /* Mobile-specific styles */
+  .header {
+    flex-wrap: wrap; /* Allow logo and toggle to wrap */
+    justify-content: space-between;
+    padding: 1rem 1.5rem; /* Add horizontal padding */
+  }
+
+  .logo {
+    justify-content: flex-start; /* Align logo to left on mobile */
+    flex-grow: 1; /* Allow logo to take available space */
+  }
+  
+  .logo h1 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .menu-toggle {
+    display: block; /* Show toggle button */
+  }
+
+  .nav-list {
+    display: none; /* Hide nav list by default */
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px; /* Position below header */
+    left: 0;
+    background: var(--light);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    z-index: 1000;
+    padding: 0; /* Remove padding here, add to individual links */
+  }
+
+  .nav-list.active {
+    display: flex; /* Show nav list when active */
+  }
+
+  .nav-list li {
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid #eee; /* Separator for mobile links */
+  }
+
+  .nav-list li:last-child {
+    border-bottom: none; /* No border for last item */
+  }
+
+  .nav-list .nav-link {
+    display: block;
+    width: 100%;
+    padding: 1rem 1.5rem; /* Padding for mobile links */
+  }
+
+  .nav-list .nav-link:hover {
+    background: var(--secondary);
+    color: white;
+  }
+
+  .dropdown-content {
+    position: static; /* Stack dropdown items vertically */
+    box-shadow: none; /* Remove shadow for nested items */
+    background: transparent; /* Transparent background for nested items */
+    width: 100%; /* Full width for dropdown content */
+    padding-left: 1rem; /* Indent dropdown items */
+  }
+
+  .dropdown-content a {
+    padding: 0.8rem 1.5rem; /* Adjust padding for nested links */
+    background: rgba(0,0,0,0.05); /* Slight background for readability */
+    border-radius: 0; /* Remove border-radius for stacked links */
+  }
+
+  .dropdown-content a:hover {
+    padding-left: 1.8rem; /* Further indent on hover */
+  }
+
+  body.dark-mode .nav-list {
+    background: #1e1e1e;
+  }
+
+  body.dark-mode .nav-list li {
+    border-bottom-color: #333;
+  }
+
+  body.dark-mode .dropdown-content {
+    background: transparent;
+  }
+
+  body.dark-mode .dropdown-content a {
+    background: rgba(255,255,255,0.05);
+  }
+
+  .main {
+    padding: 1rem; /* Adjust main content padding */
+  }
+
+  .main ul {
+    padding-left: 1.5rem; /* Adjust ul padding for smaller screens */
+  }
+
+  .footer {
+    padding: 1.5rem 1rem; /* Adjust footer padding */
+    font-size: 0.9rem;
+  }
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">
+    <svg viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="45" fill="none" stroke="white" stroke-width="5"></circle>
+      <line x1="50" y1="50" x2="50" y2="20" stroke="white" stroke-width="5"></line>
+      <line x1="50" y1="50" x2="70" y2="50" stroke="white" stroke-width="5"></line>
+    </svg>
+    <h1>What is today date</h1>
+    <button class="menu-toggle" aria-label="Toggle Navigation Menu">☰</button>
+  </div>
+</header>
+
+<nav class="nav">
+  <ul class="nav-list" role="menu">
+    <li role="none"><a href="https://whatistodaydate.com/" class="nav-link" role="menuitem">Home</a></li>
+    <li class="dropdown" role="none">
+      <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">Today's Date <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-left: 5px;"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+      <div class="dropdown-content" role="menu">
+        <a href="today-date.html" role="menuitem">Today Date</a>
+        <a href="yesterdays-date.html" role="menuitem">Yesterday's Date</a>
+        <a href="tomorrow-date.html" role="menuitem">Tomorrow's Date</a>
+        <a href="current-time.html" role="menuitem">Current Time</a>   
+        <a href="week-number.html" role="menuitem">Week Number</a>
+        <a href="how-many-days-in-a-month.html" role="menuitem">How many days in a month</a>
+        <a href="days-of-the-week.html" role="menuitem">Days of the week</a>
+        <a href="days-left-in-year.html" role="menuitem">Days left in year</a>
+        <a href="next-leap-year.html" role="menuitem">Next leap year</a>
+        <a href="week-number.html" role="menuitem">Week number</a>
+        <a href="9-days-from-today.html" role="menuitem">9 Days from today</a>
+        <a href="10-days-from-today.html" role="menuitem">10 Days from today</a>
+        <a href="28-days-from-toda.html" role="menuitem">28 Days from toda</a>
+        <a href="29-days-from-today.html" role="menuitem">29 Days from today</a>
+        <a href="180-days-from-today.html" role="menuitem">180 Days from today</a>
+        <a href="calendar.html" role="menuitem">Calendar</a>        
+        <a href="world-clock.html" role="menuitem">World Clock</a>
+      </div>
+    </li>
+    <li class="dropdown" role="none">
+      <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">Calculators <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-left: 5px;"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+      <div class="dropdown-content" role="menu">
+        <a href="date-calculator.html" role="menuitem">Date Calculator</a>
+        <a href="days-from-today-calculator.html" role="menuitem">Days From Today Calculator</a>
+        <a href="countdown-timer.html" role="menuitem">Countdown Timer</a>
+        <a href="age-calculator.html" role="menuitem">Age Calculator</a>
+      </div>
+    </li>
+    <li class="dropdown" role="none">
+      <a href="/public-holidays-us.html" class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">Public Holidays <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-left: 5px;"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+      <div class="dropdown-content" role="menu">
+        <a href="public-holidays-us.html" role="menuitem">Public Holidays US</a>
+        <a href="upcoming-holidays-jan-feb.html" role="menuitem">Upcoming Holidays (Jan - Feb)</a>
+        <a href="upcoming-holidays-mar-apr.html" role="menuitem">Upcoming Holidays (Mar - Apr)</a>
+        <a href="upcoming-holidays-may-jun.html" role="menuitem">Upcoming Holidays (May - Jun)</a>
+        <a href="upcoming-holidays-july-august.html" role="menuitem">Upcoming Holidays (July - August)</a>
+        <a href="upcoming-holidays-sep-oct.html" role="menuitem">Upcoming Holidays (Sep - Oct)</a>
+        <a href="upcoming-holidays-nov-dec.html" role="menuitem">Upcoming Holidays (Nov - Dec)</a>
+      </div>
+    </li>
+    <li role="none"><a href="privacy-policy.html" class="nav-link" role="menuitem">Privacy Policy</a></li>
+    <li role="none"><a href="contact.html" class="nav-link" role="menuitem">Contact</a></li>
+  </ul>
+</nav>
+
+<main class="main">
+  <h1>Privacy Policy</h1>
+  <p>Last updated: June 20, 2024</p>
+
+  <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
+  <p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.</p>
+
+  <h2>Interpretation and Definitions</h2>
+  <h3>Interpretation</h3>
+  <p>The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.</p>
+
+  <h3>Definitions</h3>
+  <ul>
+    <li><strong>Account</strong> means a unique account created for You to access our Service or parts of our Service.</li>
+    <li><strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to What is today date.</li>
+    <li><strong>Cookies</strong> are small files that are placed on Your computer, mobile device or any other device by a website, containing the details of Your browsing history on that website among its many uses.</li>
+    <li><strong>Country</strong> refers to: United States.</li>
+    <li><strong>Device</strong> means any device that can access the Service such as a computer, a cellphone or a digital tablet.</li>
+    <li><strong>Personal Data</strong> is any information that relates to an identified or identifiable individual.</li>
+    <li><strong>Service</strong> refers to the Website.</li>
+    <li><strong>Service Provider</strong> means any natural or legal person who processes the data on behalf of the Company. It refers to third-party companies or individuals employed by the Company to facilitate the Service, to provide the Service on behalf of the Company, to perform services related to the Service or to assist the Company in analyzing how the Service is used.</li>
+    <li><strong>Usage Data</strong> refers to data collected automatically, either generated by the use of the Service or from the Service infrastructure itself (for example, the duration of a page visit).</li>
+    <li><strong>Website</strong> refers to What is today date, accessible from https://whatistodaydate.com/</li>
+    <li><strong>You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</li>
+  </ul>
+
+  <h2>Collecting and Using Your Personal Data</h2>
+  <h3>Types of Data Collected</h3>
+  <h4>Personal Data</h4>
+  <p>While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:</p>
+  <ul>
+    <li>Usage Data</li>
+  </ul>
+
+  <h4>Usage Data</h4>
+  <p>Usage Data is collected automatically when using the Service.</p>
+  <p>Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data.</p>
+  <p>When You access the Service by or through a mobile device, We may collect certain information automatically, including, but not limited to, the type of mobile device You use, Your mobile device unique ID, the IP address of Your mobile device, Your mobile operating system, the type of mobile Internet browser You use, unique device identifiers and other diagnostic data.</p>
+  <p>We may also collect information that Your browser sends whenever You visit our Service or when You access the Service by or through a mobile device.</p>
+
+  <h4>Tracking Technologies and Cookies</h4>
+  <p>We use Cookies and similar tracking technologies to track the activity on Our Service and store certain information. Tracking technologies used are beacons, tags, and scripts to collect and track information and to improve and analyze Our Service. The technologies We use may include:</p>
+  <ul>
+    <li><strong>Cookies or Browser Cookies.</strong> A cookie is a small file placed on Your Device. You can instruct Your browser to refuse all Cookies or to indicate when a Cookie is being sent. However, if You do not accept Cookies, You may not be able to use some parts of our Service. Unless you have adjusted Your browser setting so that it will refuse Cookies, our Service may use Cookies.</li>
+    <li><strong>Web Beacons.</strong> Certain sections of our Service and our emails may contain small electronic files known as web beacons (also referred to as clear gifs, pixel tags, and single-pixel gifs) that permit the Company, for example, to count users who have visited those pages or opened an email and for other related website statistics (for example, recording the popularity of a certain section and verifying system and server integrity).</li>
+  </ul>
+  <p>Cookies can be "Persistent" or "Session" Cookies. Persistent Cookies remain on Your personal computer or mobile device when You go offline, while Session Cookies are deleted as soon as You close Your web browser. Learn more about cookies on the <a href="https://www.privacypolicies.com/blog/cookies/" target="_blank">Privacy Policies website</a> article.</p>
+  <p>We use both Session and Persistent Cookies for the purposes set out below:</p>
+  <ul>
+    <li>
+      <p><strong>Necessary / Essential Cookies</strong></p>
+      <p>Type: Session Cookies</p>
+      <p>Administered by: Us</p>
+      <p>Purpose: These Cookies are essential to provide You with services available through the Website and to enable You to use some of its features. They help to authenticate users and prevent fraudulent use of user accounts. Without these Cookies, the services that You have asked for cannot be provided, and We only use these Cookies to provide You with those services.</p>
+    </li>
+    <li>
+      <p><strong>Cookies Policy / Notice Acceptance Cookies</strong></p>
+      <p>Type: Persistent Cookies</p>
+      <p>Administered by: Us</p>
+      <p>Purpose: These Cookies identify if users have accepted the use of cookies on the Website.</p>
+    </li>
+    <li>
+      <p><strong>Functionality Cookies</strong></p>
+      <p>Type: Persistent Cookies</p>
+      <p>Administered by: Us</p>
+      <p>Purpose: These Cookies allow us to remember choices You make when You use the Website, such as remembering your login details or language preference. The purpose of these Cookies is to provide You with a more personal experience and to avoid You having to re-enter your preferences every time You use the Website.</p>
+    </li>
+  </ul>
+
+  <h3>Use of Your Personal Data</h3>
+  <p>The Company may use Personal Data for the following purposes:</p>
+  <ul>
+    <li><strong>To provide and maintain our Service</strong>, including to monitor the usage of our Service.</li>
+    <li><strong>To manage Your Account:</strong> to manage Your registration as a user of the Service. The Personal Data You provide can give You access to different functionalities of the Service that are available to You as a registered user.</li>
+    <li><strong>For the performance of a contract:</strong> the development, compliance and undertaking of the purchase contract for the products, items or services You have purchased or of any other contract with Us through the Service.</li>
+    <li><strong>To contact You:</strong> To contact You by email, telephone calls, SMS, or other equivalent forms of electronic communication, such as a mobile application's push notifications regarding updates or informative communications related to the functionalities, products or contracted services, including the security updates, when necessary or reasonable for their implementation.</li>
+    <li><strong>To provide You</strong> with news, special offers and general information about other goods, services and events which we offer that are similar to those that you have already purchased or enquired about unless You have opted not to receive such information.</li>
+    <li><strong>To manage Your requests:</strong> To attend and manage Your requests to Us.</li>
+    <li><strong>For business transfers:</strong> We may use Your information to evaluate or conduct a merger, divestiture, restructuring, reorganization, dissolution, or other sale or transfer of some or all of Our assets, whether as a going concern or as part of bankruptcy, liquidation, or similar proceeding, in which Personal Data held by Us about our Service users is among the assets transferred.</li>
+    <li><strong>For other purposes</strong>: We may use Your information for other purposes, such as data analysis, identifying usage trends, determining the effectiveness of our promotional campaigns and to evaluate and improve our Service, products, services, marketing and your experience.</li>
+  </ul>
+
+  <p>We may share Your personal information in the following situations:</p>
+  <ul>
+    <li><strong>With Service Providers:</strong> We may share Your personal information with Service Providers to monitor and analyze the use of our Service, to contact You.</li>
+    <li><strong>For business transfers:</strong> We may share or transfer Your personal information in connection with, or during negotiations of, any merger, sale of Company assets, financing, or acquisition of all or a portion of Our business to another company.</li>
+    <li><strong>With Affiliates:</strong> We may share Your information with Our affiliates, in which case we will require those affiliates to honor this Privacy Policy. Affiliates include Our parent company and any other subsidiaries, joint venture partners or other companies that We control or that are under common control with Us.</li>
+    <li><strong>With business partners:</strong> We may share Your information with Our business partners to offer You certain products, services or promotions.</li>
+    <li><strong>With other users:</strong> when You share personal information or otherwise interact in the public areas with other users, such information may be viewed by all users and may be publicly distributed outside.</li>
+    <li><strong>With Your consent</strong>: We may disclose Your personal information for any other purpose with Your consent.</li>
+  </ul>
+
+  <h2>Retention of Your Personal Data</h2>
+  <p>The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies.</p>
+  <p>The Company will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of Our Service, or We are legally obligated to retain this data for longer time periods.</p>
+
+  <h2>Transfer of Your Personal Data</h2>
+  <p>Your information, including Personal Data, is processed at the Company's operating offices and in any other places where the parties involved in the processing are located. It means that this information may be transferred to — and maintained on — computers located outside of Your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from Your jurisdiction.</p>
+  <p>Your consent to this Privacy Policy followed by Your submission of such information represents Your agreement to that transfer.</p>
+  <p>The Company will take all steps reasonably necessary to ensure that Your data is treated securely and in accordance with this Privacy Policy and no transfer of Your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of Your data and other personal information.</p>
+
+  <h2>Disclosure of Your Personal Data</h2>
+  <h3>Business Transactions</h3>
+  <p>If the Company is involved in a merger, acquisition or asset sale, Your Personal Data may be transferred. We will provide notice before Your Personal Data is transferred and becomes subject to a different Privacy Policy.</p>
+
+  <h3>Law enforcement</h3>
+  <p>Under certain circumstances, the Company may be required to disclose Your Personal Data if required to do so by law or in response to valid requests by public authorities (e.g. a court or a government agency).</p>
+
+  <h3>Other legal requirements</h3>
+  <p>The Company may disclose Your Personal Data in the good faith belief that such action is necessary to:</p>
+  <ul>
+    <li>Comply with a legal obligation</li>
+    <li>Protect and defend the rights or property of the Company</li>
+    <li>Prevent or investigate possible wrongdoing in connection with the Service</li>
+    <li>Protect the personal safety of Users of the Service or the public</li>
+    <li>Protect against legal liability</li>
+  </ul>
+
+  <h2>Security of Your Personal Data</h2>
+  <p>The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee its absolute security.</p>
+
+  <h2>Links to Other Websites</h2>
+  <p>Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party's site. We strongly advise You to review the Privacy Policy of every site You visit.</p>
+  <p>We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.</p>
+
+  <h2>Changes to this Privacy Policy</h2>
+  <p>We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.</p>
+  <p>We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming effective and update the "Last updated" date at the top of this Privacy Policy.</p>
+  <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+
+  <h2>Contact Us</h2>
+  <p>If you have any questions about this Privacy Policy, You can contact us:</p>
+  <ul>
+    <li>By email: support@whatistodaydate.com</li>
+  </ul>
+</main>
+
+<footer class="footer">
+  <p> 2025 Whatistodaydate. All rights reserved.</p>
+  <a href="https://dateaujourdhui.net/" style="color: white;">Date aujourd'hui</a> - 
+  <a href="https://whatistodaydate.com/sitemap.html" style="color: white;">Sitemap</a>
+</footer>
+
+<button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Dark Mode">
+  <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+    <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75zM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0zm11.394 5.834a.75.75 0 0 1-.082 1.06l-1.591 1.591a.75.75 0 1 1-1.06-1.06l1.591-1.591a.75.75 0 0 1 1.06.082z"></path>
+  </svg>
+</button>
+
+<script>
+// Mobile Menu Toggle
+document.querySelector('.menu-toggle').addEventListener('click', () => {
+  const navList = document.querySelector('.nav-list');
+  navList.classList.toggle('active');
+  const isExpanded = navList.classList.contains('active');
+  document.querySelector('.menu-toggle').setAttribute('aria-expanded', isExpanded);
+});
+
+// Dark Mode Toggle
+const darkModeToggle = document.getElementById('darkModeToggle');
+darkModeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+  // Update aria-label based on mode
+  const currentMode = document.body.classList.contains('dark-mode') ? 'Dark' : 'Light';
+  darkModeToggle.setAttribute('aria-label', `Toggle ${currentMode} Mode`);
+});
+
+// Check for saved dark mode preference
+if (localStorage.getItem('darkMode') === 'true') {
+  document.body.classList.add('dark-mode');
+  darkModeToggle.setAttribute('aria-label', 'Toggle Light Mode');
+} else {
+  darkModeToggle.setAttribute('aria-label', 'Toggle Dark Mode');
+}
+
+// Dropdown accessibility
+document.querySelectorAll('.dropdown > .nav-link').forEach(dropdownToggle => {
+  dropdownToggle.addEventListener('click', function(e) {
+    e.preventDefault();
+    const dropdownContent = this.nextElementSibling;
+    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+    
+    // Close other open dropdowns
+    document.querySelectorAll('.dropdown-content').forEach(content => {
+      if (content !== dropdownContent && content.style.display === 'block') {
+        content.style.display = 'none';
+        content.previousElementSibling.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // Toggle current dropdown
+    if (isExpanded) {
+      dropdownContent.style.display = 'none';
+      this.setAttribute('aria-expanded', 'false');
+    } else {
+      dropdownContent.style.display = 'block';
+      this.setAttribute('aria-expanded', 'true');
+    }
+  });
+
+  // Close dropdown if clicked outside
+  document.addEventListener('click', (e) => {
+    if (!dropdownToggle.contains(e.target) && !dropdownToggle.nextElementSibling.contains(e.target)) {
+      dropdownToggle.nextElementSibling.style.display = 'none';
+      dropdownToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+<base href=".">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Upcoming Holidays (March - April 2025) - What is today date</title>
+<meta http-equiv="Content-Language" content="en" />
+<meta name="description" content="Discover upcoming holidays in March and April 2025 for the United States, including federal, state, and cultural observances. Plan your spring with our detailed holiday list."/>
+<meta name="keywords" content="upcoming holidays, March 2025 holidays, April 2025 holidays, US holidays, federal holidays, national observances, What is today date" />
+<style>
+:root {
+  --primary: #1a237e;     /* Deeper blue */
+  --secondary: #3f51b5;   /* Rich indigo */
+  --accent: #ff4081;      /* Vibrant pink */
+  --light: #f5f5f5;       /* Lighter gray */
+  
+  /* Add new color variables */
+  --gradient-start: #1a237e;
+  --gradient-end: #3f51b5;
+  --text-primary: #2c3e50;
+  --card-shadow: rgba(0,0,0,0.12);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.6;
+  color: var(--primary);
+  background-color: var(--light);
+}
+
+/* Header & Logo */
+.header {
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  padding: 1rem;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.logo svg {
+  width: 40px;
+  height: 40px;
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Navigation */
+.nav {
+  background: var(--light);
+  padding: 1rem;
+  text-align: center;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  justify-content: center;
+  padding: 0;
+}
+
+.nav-link {
+  color: var(--primary);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.nav-link:hover {
+  background: var(--secondary);
+  color: white;
+}
+
+/* Main Content */
+.main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px var(--card-shadow);
+}
+
+.main h1, .main h2 {
+  color: var(--secondary);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.main p {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+  text-align: left;
+}
+
+.holiday-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+.holiday-table th, .holiday-table td {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.holiday-table th {
+  background: var(--secondary);
+  color: white;
+}
+
+.holiday-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.holiday-table tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+/* Footer */
+.footer {
+  background: var(--primary);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.dark-mode-toggle:hover {
+  transform: scale(1.1);
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background: #121212;
+  color: #fafafa;
+}
+
+body.dark-mode .main {
+  background: #1e1e1e;
+  color: #fafafa;
+}
+
+body.dark-mode .nav {
+  background: #1e1e1e;
+}
+
+body.dark-mode .nav-link {
+  color: #ffffff;
+}
+
+body.dark-mode .main h1, body.dark-mode .main h2 {
+  color: var(--accent);
+}
+
+body.dark-mode .main p {
+  color: #fafafa;
+}
+
+body.dark-mode .holiday-table th {
+  background: #3f51b5; /* Slightly lighter primary for dark mode */
+}
+
+body.dark-mode .holiday-table td {
+  border-color: #444;
+}
+
+body.dark-mode .holiday-table tbody tr:nth-child(even) {
+  background-color: #2a2a2a;
+}
+
+body.dark-mode .holiday-table tbody tr:hover {
+  background-color: #333;
+}
+
+  /* Dropdown Menu Styles */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a {
+    color: var(--primary);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+  }
+
+  .dropdown-content a:hover {
+    background: var(--secondary);
+    color: white;
+    padding-left: 24px;
+  }
+
+  body.dark-mode .dropdown-content {
+    background: #2a2a2a;
+  }
+
+  body.dark-mode .dropdown-content a {
+    color: #ffffff;
+  }
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100px; /* Adjust based on header height */
+    left: 0;
+    background: var(--light);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .nav-list li {
+    width: 100%;
+    text-align: left;
+  }
+
+  .nav-list .nav-link {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+  }
+
+  .nav-list .nav-link:hover {
+    background: var(--secondary);
+    color: white;
+  }
+}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/luxon@3.0.1/build/global/luxon.min.js"></script>
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">
+    <svg viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="45" fill="none" stroke="white" stroke-width="5"></circle>
+      <line x1="50" y1="50" x2="50" y2="20" stroke="white" stroke-width="5"></line>
+      <line x1="50" y1="50" x2="70" y2="50" stroke="white" stroke-width="5"></line>
+    </svg>
+    <h1>What is today date</h1>
+    <button class="menu-toggle">☰</button>
+  </div>
+</header>
+
+<nav class="nav">
+  <ul class="nav-list" role="menu">
+    <li role="none"><a href="https://whatistodaydate.com/" class="nav-link" role="menuitem">Home</a></li>
+    <li class="dropdown" role="none">
+      <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">Today's Date <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-left: 5px;"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+      <div class="dropdown-content" role="menu">
+        <a href="today-date.html" role="menuitem">Today Date</a>
+        <a href="yesterdays-date.html" role="menuitem">Yesterday's Date</a>
+        <a href="tomorrow-date.html" role="menuitem">Tomorrow's Date</a>
+        <a href="current-time.html" role="menuitem">Current Time</a>   
+        <a href="week-number.html" role="menuitem">Week Number</a>
+        <a href="how-many-days-in-a-month.html" role="menuitem">How many days in a month</a>
+        <a href="days-of-the-week.html" role="menuitem">Days of the week</a>
+        <a href="days-left-in-year.html" role="menuitem">Days left in year</a>
+        <a href="next-leap-year.html" role="menuitem">Next leap year</a>
+        <a href="week-number.html" role="menuitem">Week number</a>
+        <a href="9-days-from-today.html" role="menuitem">9 Days from today</a>
+        <a href="10-days-from-today.html" role="menuitem">10 Days from today</a>
+        <a href="28-days-from-toda.html" role="menuitem">28 Days from toda</a>
+        <a href="29-days-from-today.html" role="menuitem">29 Days from today</a>
+        <a href="180-days-from-today.html" role="menuitem">180 Days from today</a>
+        <a href="calendar.html" role="menuitem">Calendar</a>        
+        <a href="world-clock.html" role="menuitem">World Clock</a>
+      </div>
+    </li>
+    <li class="dropdown" role="none">
+      <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">Calculators <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-left: 5px;"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+      <div class="dropdown-content" role="menu">
+        <a href="date-calculator.html" role="menuitem">Date Calculator</a>
+        <a href="days-from-today-calculator.html" role="menuitem">Days From Today Calculator</a>
+        <a href="countdown-timer.html" role="menuitem">Countdown Timer</a>
+        <a href="age-calculator.html" role="menuitem">Age Calculator</a>
+      </div>
+    </li>
+    <li class="dropdown" role="none">
+      <a href="/public-holidays-us.html" class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">Public Holidays <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-left: 5px;"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+      <div class="dropdown-content" role="menu">
+        <a href="public-holidays-us.html" role="menuitem">Public Holidays US</a>
+        <a href="upcoming-holidays-jan-feb.html" role="menuitem">Upcoming Holidays (Jan - Feb)</a>
+        <a href="upcoming-holidays-mar-apr.html" role="menuitem">Upcoming Holidays (Mar - Apr)</a>
+        <a href="upcoming-holidays-may-jun.html" role="menuitem">Upcoming Holidays (May - Jun)</a>
+        <a href="upcoming-holidays-july-august.html" role="menuitem">Upcoming Holidays (July - August)</a>
+        <a href="upcoming-holidays-sep-oct.html" role="menuitem">Upcoming Holidays (Sep - Oct)</a>
+        <a href="upcoming-holidays-nov-dec.html" role="menuitem">Upcoming Holidays (Nov - Dec)</a>
+      </div>
+    </li>
+    <li role="none"><a href="privacy-policy.html" class="nav-link" role="menuitem">Privacy Policy</a></li>
+    <li role="none"><a href="contact.html" class="nav-link" role="menuitem">Contact</a></li>
+  </ul>
+</nav>
+<script async="async" data-cfasync="false" src="//pl27053785.profitableratecpm.com/5b8b5b20e2f221bfe1fb5740d2b42dc7/invoke.js"></script>
+<div id="container-5b8b5b20e2f221bfe1fb5740d2b42dc7"></div>
+<main class="main">
+  <h1>Upcoming Holidays (March - April 2025)</h1>
+  <p>If you follow APS, you'll find all the important information about upcoming holidays and celebrations in the United States in March and April 2025. Here's a detailed list of all federal holidays, state holidays, and other important celebrations that you can use to effectively manage your spring schedule. Which will save you a lot of time.</p>
+  <p>Whether you're looking forward to a long week, a cultural event, an important event, or just want to be aware of possible office closures, our comprehensive list will help you out.</p>
+
+  <h2 style="margin-top: 3rem;">March 2025 Holidays</h2>
+  <table class="holiday-table">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Day</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1 Mar</td><td>Saturday</td><td>Ramadan Starts</td><td>Muslim</td><td> </td></tr>
+      <tr><td>1 Mar</td><td>Saturday</td><td>St. David's Day</td><td>Observance, Christian</td><td> </td></tr>
+      <tr><td>1 Mar</td><td>Saturday</td><td>First Day of Women's History Month</td><td>Annual Monthly Observance</td><td> </td></tr>
+      <tr><td>1 Mar</td><td>Saturday</td><td>First Day of Irish American Heritage Month</td><td>Annual Monthly Observance</td><td> </td></tr>
+      <tr><td>2 Mar</td><td>Sunday</td><td>Texas Independence Day</td><td>State Holiday</td><td>Texas</td></tr>
+      <tr><td>3 Mar</td><td>Monday</td><td>Casimir Pulaski Day</td><td>State Observance</td><td>Illinois, Indiana</td></tr>
+      <tr><td>3 Mar</td><td>Monday</td><td>Read Across America Day</td><td>Observance</td><td> </td></tr>
+      <tr><td>4 Mar</td><td>Tuesday</td><td>Shrove Tuesday/Mardi Gras</td><td>State Holiday</td><td>AL*, FL**, LA, MS**</td></tr>
+      <tr><td>4 Mar</td><td>Tuesday</td><td>Shrove Tuesday/Mardi Gras</td><td>Observance, Christian</td><td> </td></tr>
+      <tr><td>4 Mar</td><td>Tuesday</td><td>Casimir Pulaski Day</td><td>State Observance</td><td>Wisconsin</td></tr>
+      <tr><td>4 Mar</td><td>Tuesday</td><td>Town Meeting Day</td><td>State Holiday</td><td>Vermont</td></tr>
+      <tr><td>5 Mar</td><td>Wednesday</td><td>Ash Wednesday</td><td>Christian</td><td> </td></tr>
+      <tr><td>7 Mar</td><td>Friday</td><td>Employee Appreciation Day</td><td>Observance</td><td> </td></tr>
+      <tr><td>9 Mar</td><td>Sunday</td><td>Daylight Saving Time starts</td><td>Clock Change/Daylight Saving Time</td><td> </td></tr>
+      <tr><td>14 Mar</td><td>Friday</td><td>Holi</td><td>Hindu Holiday</td><td> </td></tr>
+      <tr><td>14 Mar</td><td>Friday</td><td>Purim</td><td>Jewish holiday</td><td> </td></tr>
+      <tr><td>17 Mar</td><td>Monday</td><td>St. Patrick's Day</td><td>Observance, Christian</td><td> </td></tr>
+      <tr><td>17 Mar</td><td>Monday</td><td>Evacuation Day</td><td>State Holiday</td><td>Massachusetts*</td></tr>
+      <tr><td>20 Mar</td><td>Thursday</td><td>March Equinox</td><td>Season</td><td> </td></tr>
+      <tr><td>25 Mar</td><td>Tuesday</td><td>Maryland Day</td><td>State Observance</td><td>Maryland</td></tr>
+      <tr><td>26 Mar</td><td>Wednesday</td><td>Lailat al-Qadr</td><td>Muslim</td><td> </td></tr>
+      <tr><td>26 Mar</td><td>Wednesday</td><td>Prince Jonah Kuhio Kalanianaole Day</td><td>State Holiday</td><td>Hawaii</td></tr>
+      <tr><td>29 Mar</td><td>Saturday</td><td>National Vietnam War Veterans Day</td><td>Observance</td><td> </td></tr>
+      <tr><td>30 Mar</td><td>Sunday</td><td>Eid al-Fitr</td><td>Muslim</td><td> </td></tr>
+      <tr><td>30 Mar</td><td>Sunday</td><td>Wyoming Veterans Welcome Home Day</td><td>State Observance</td><td>Wyoming</td></tr>
+      <tr><td>30 Mar</td><td>Sunday</td><td>Doctors' Day</td><td>Observance</td><td> </td></tr>
+      <tr><td>30 Mar</td><td>Sunday</td><td>Vietnam Veterans Day</td><td>State Observance</td><td>Delaware, West Virginia</td></tr>
+      <tr><td>31 Mar</td><td>Monday</td><td>Eid al-Fitr</td><td>Muslim</td><td> </td></tr>
+      <tr><td>31 Mar</td><td>Monday</td><td>Seward's Day</td><td>State Holiday</td><td>Alaska</td></tr>
+      <tr><td>31 Mar</td><td>Monday</td><td>César Chávez Day</td><td>State Holiday</td><td>AZ*, CA, CO***, MI*, NM*, NV*, TX***, UT*, WI*</td></tr>
+      <tr><td>31 Mar</td><td>Monday</td><td>César Chávez Day</td><td>State Observance</td><td>Washington</td></tr>
+    </tbody>
+  </table>
+
+  <h2 style="margin-top: 3rem;">April 2025 Holidays</h2>
+  <table class="holiday-table">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Day</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>2 Apr</td><td>Wednesday</td><td>Pascua Florida Day</td><td>Local Observance</td><td>Florida</td></tr>
+      <tr><td>6 Apr</td><td>Sunday</td><td>National Tartan Day</td><td>Observance</td><td> </td></tr>
+      <tr><td>8 Apr</td><td>Tuesday</td><td>National Library Workers' Day</td><td>Observance</td><td> </td></tr>
+      <tr><td>12 Apr</td><td>Saturday</td><td>Passover Eve</td><td>Jewish holiday</td><td> </td></tr>
+      <tr><td>13 Apr</td><td>Sunday</td><td>Palm Sunday</td><td>Christian</td><td> </td></tr>
+      <tr><td>13 Apr</td><td>Sunday</td><td>Passover (first day)</td><td>Jewish holiday</td><td> </td></tr>
+      <tr><td>13 Apr</td><td>Sunday</td><td>Thomas Jefferson's Birthday</td><td>Observance</td><td> </td></tr>
+      <tr><td>15 Apr</td><td>Tuesday</td><td>Tax Day</td><td>Observance</td><td> </td></tr>
+      <tr><td>15 Apr</td><td>Tuesday</td><td>Father Damien Day</td><td>Local Observance</td><td>Hawaii</td></tr>
+      <tr><td>16 Apr</td><td>Wednesday</td><td>Emancipation Day</td><td>State Holiday</td><td>DC</td></tr>
+      <tr><td>17 Apr</td><td>Thursday</td><td>Maundy Thursday</td><td>Christian</td><td> </td></tr>
+      <tr><td>18 Apr</td><td>Friday</td><td>Orthodox Good Friday</td><td>Orthodox</td><td> </td></tr>
+      <tr><td>18 Apr</td><td>Friday</td><td>Good Friday</td><td>Half Day</td><td>Kentucky</td></tr>
+      <tr><td>18 Apr</td><td>Friday</td><td>Good Friday</td><td>State Holiday</td><td>CT, DE, HI, IN, LA, NC, ND, NJ, TN, TX***</td></tr>
+      <tr><td>18 Apr</td><td>Friday</td><td>Arbor Day</td><td>State Holiday</td><td>Nebraska</td></tr>
+      <tr><td>18 Apr</td><td>Friday</td><td>State Holiday</td><td>State Holiday</td><td>Georgia</td></tr>
+      <tr><td>19 Apr</td><td>Saturday</td><td>Holy Saturday</td><td>Christian</td><td> </td></tr>
+      <tr><td>19 Apr</td><td>Saturday</td><td>Orthodox Holy Saturday</td><td>Orthodox</td><td> </td></tr>
+      <tr><td>20 Apr</td><td>Sunday</td><td>Last Day of Passover</td><td>Jewish holiday</td><td> </td></tr>
+      <tr><td>20 Apr</td><td>Sunday</td><td>Orthodox Easter</td><td>Orthodox</td><td> </td></tr>
+      <tr><td>20 Apr</td><td>Sunday</td><td>Easter Sunday</td><td>Observance, Christian</td><td> </td></tr>
+      <tr><td>21 Apr</td><td>Monday</td><td>Orthodox Easter Monday</td><td>Orthodox</td><td> </td></tr>
+      <tr><td>21 Apr</td><td>Monday</td><td>Easter Monday</td><td>Observance, Christian</td><td> </td></tr>
+      <tr><td>21 Apr</td><td>Monday</td><td>Patriots' Day</td><td>State Holiday</td><td>Maine, Massachusetts</td></tr>
+      <tr><td>21 Apr</td><td>Monday</td><td>San Jacinto Day</td><td>State Holiday</td><td>Texas</td></tr>
+      <tr><td>21 Apr</td><td>Monday</td><td>Boston Marathon</td><td>Sporting Event</td><td> </td></tr>
+      <tr><td>22 Apr</td><td>Tuesday</td><td>Oklahoma Day</td><td>Local Observance</td><td>Oklahoma</td></tr>
+      <tr><td>23 Apr</td><td>Wednesday</td><td>Yom HaShoah</td><td>Jewish commemoration</td><td> </td></tr>
+      <tr><td>23 Apr</td><td>Wednesday</td><td>Administrative Professionals Day</td><td>Observance</td><td> </td></tr>
+      <tr><td>24 Apr</td><td>Thursday</td><td>Take our Daughters and Sons to Work Day</td><td>Observance</td><td> </td></tr>
+      <tr><td>25 Apr</td><td>Friday</td><td>Arbor Day</td><td>State Holiday</td><td>Nebraska</td></tr>
+      <tr><td>25 Apr</td><td>Friday</td><td>Arbor Day</td><td>State Observance</td><td>Arizona, Delaware</td></tr>
+      <tr><td>26 Apr</td><td>Saturday</td><td>Confederate Memorial Day</td><td>State Legal Holiday</td><td>Florida</td></tr>
+      <tr><td>28 Apr</td><td>Monday</td><td>Arbor Day</td><td>State Observance</td><td>Wyoming</td></tr>
+      <tr><td>28 Apr</td><td>Monday</td><td>Confederate Memorial Day</td><td>State Holiday</td><td>Mississippi</td></tr>
+      <tr><td>28 Apr</td><td>Monday</td><td>Confederate Memorial Day</td><td>State Holiday</td><td>Alabama</td></tr>
+    </tbody>
+  </table>
+
+  <h2 style="margin-top: 3rem;">Understanding Holiday Types</h2>
+  <p>Holidays in the U.S. can vary significantly in their observance:</p>
+  <ul>
+    <li><strong>Federal Holidays:</strong> Federal government offices are closed nationwide, with most banks and post offices closed. Many businesses and schools are also closed during this time.</li>
+    <li><strong>State Holidays:</strong> Holidays observed by certain states, meaning that government offices and schools for that state may be closed. However, they are not observed nationwide.</li>
+    <li><strong>Local Observances:</strong> Holidays or observances observed only in a specific city, county, or region.</li>
+    <li><strong>Observances:</strong> Widely recognized days of celebration, but generally not days off from work or school. These are often cultural or awareness days.</li>
+    <li><strong>Religious/Cultural Holidays:</strong> Holidays associated with specific religious or cultural traditions. Businesses may or may not be closed, and individuals observe them based on personal preference.</li>
+  </ul>
+
+  <h2 style="margin-top: 3rem;">Planning Your Spring Around Holidays</h2>
+  <p>Knowing these dates allows you to:</p>
+  <ul>
+    <li>Plan your vacation strategically to make the most of any long weekend.</li>
+    <li>Anticipate potential delays in services due to government office or bank closures.</li>
+    <li>Attend cultural celebrations or state events.</li>
+    <li>Coordinate business activities to minimize disruptions.</li>
+  </ul>
+  <p>You can use this list to easily manage any important planning you need. It always ensures specific closures with local authorities or organizations.</p>
+</main>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6853916710171263"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-6853916710171263"
+     data-ad-slot="2315431246"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<footer class="footer">
+  <p> 2025 Whatistodaydate. All rights reserved.</p>
+<a href="https://dateaujourdhui.net/" style="color: white;">Date aujourd'hui</a> - 
+  <a href="https://whatistodaydate.com/sitemap.html" style="color: white;">Sitemap</a>
+</footer>
+
+<button class="dark-mode-toggle" id="darkModeToggle">
+  <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+    <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75zM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0zm11.394 5.834a.75.75 0 0 1-.082 1.06l-1.591 1.591a.75.75 0 1 1-1.06-1.06l1.591-1.591a.75.75 0 0 1 1.06.082z"></path>
+  </svg>
+</button>
+
+<script>
+// Mobile Menu Toggle
+document.querySelector('.menu-toggle').addEventListener('click', () => {
+  document.querySelector('.nav-list').classList.toggle('active');
+});
+
+// Dark Mode Toggle
+const darkModeToggle = document.getElementById('darkModeToggle');
+darkModeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+});
+
+// Check for saved dark mode preference
+if (localStorage.getItem('darkMode') === 'true') {
+  document.body.classList.add('dark-mode');
+}
+</script>
+
+</body>
+</html>

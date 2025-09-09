@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sitemap - What is Today's Date | All Pages</title>
+<meta name="description" content="Explore all pages on Whatistodaydate.com with our comprehensive sitemap. Find current time, dates, calculators, holidays, and more for easy navigation and SEO."></meta>
+<meta name="keywords" content="sitemap, all pages, site map, website structure, current time, today's date, date calculator, public holidays, world clock, SEO, navigation"></meta>
+<style>
+:root {
+  --primary: #1a237e;     /* Deeper blue */
+  --secondary: #3f51b5;   /* Rich indigo */
+  --accent: #ff4081;      /* Vibrant pink */
+  --light: #f5f5f5;       /* Lighter gray */
+  
+  /* Add new color variables */
+  --gradient-start: #1a237e;
+  --gradient-end: #3f51b5;
+  --text-primary: #2c3e50;
+  --card-shadow: rgba(0,0,0,0.12);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.6;
+  color: var(--primary);
+  background-color: var(--light);
+}
+
+/* Header & Logo */
+.header {
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  padding: 1rem;
+  color: white;
+  position: relative;
+  z-index: 1001;
+  display: flex; /* Added for mobile alignment */
+  align-items: center; /* Added for mobile alignment */
+  justify-content: center; /* Added for mobile alignment */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  flex-grow: 1; /* Allow logo to take available space */
+}
+
+.logo h1 {
+  font-size: 1.8rem; /* Adjust for better mobile fit */
+}
+
+.logo svg {
+  width: 40px;
+  height: 40px;
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Navigation */
+.nav {
+  background: var(--light);
+  padding: 1rem;
+  text-align: center;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  justify-content: center;
+  padding: 0;
+}
+
+.nav-link {
+  color: var(--primary);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.nav-link:hover {
+  background: var(--secondary);
+  color: white;
+}
+
+/* Mobile Menu */
+.menu-toggle {
+  display: none; /* Hidden by default, shown in media query */
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  position: absolute; /* Position relative to header */
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1002; /* Ensure it's above other elements */
+}
+
+/* Main Content */
+.main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px var(--card-shadow);
+  text-align: center;
+}
+
+.main h1 {
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+}
+
+.main p {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.current-time-display {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--accent);
+  margin: 2rem 0;
+}
+
+/* Footer */
+.footer {
+  background: var(--primary);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+  z-index: 1000;
+}
+
+.dark-mode-toggle:hover {
+  transform: scale(1.1);
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background: #121212;
+  color: #fafafa;
+}
+
+body.dark-mode .main {
+  background: #1e1e1e;
+  color: #fafafa;
+}
+
+body.dark-mode .nav {
+  background: #1e1e1e;
+}
+
+body.dark-mode .nav-link {
+  color: #ffffff;
+}
+
+body.dark-mode .main h1 {
+  color: var(--accent);
+}
+
+body.dark-mode .main p {
+  color: #fafafa;
+}
+
+body.dark-mode .current-time-display {
+  color: #ff99c4; /* Lighter accent for dark mode */
+}
+
+  /* Dropdown Menu Styles */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a {
+    color: var(--primary);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+  }
+
+  .dropdown-content a:hover {
+    background: var(--secondary);
+    color: white;
+    padding-left: 24px;
+  }
+
+  body.dark-mode .dropdown-content {
+    background: #2a2a2a;
+  }
+
+  body.dark-mode .dropdown-content a {
+    color: #ffffff;
+  }
+
+.sitemap-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    text-align: left;
+}
+
+.sitemap-list li a {
+    display: block;
+    padding: 0.8rem 1rem;
+    background: var(--light);
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--primary);
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.sitemap-list li a:hover {
+    background: var(--secondary);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+body.dark-mode .sitemap-list li a {
+    background: #2a2a2a;
+    color: #fafafa;
+    box-shadow: 0 1px 3px rgba(255,255,255,0.05);
+}
+
+body.dark-mode .sitemap-list li a:hover {
+    background: var(--accent);
+    color: #1a237e;
+    box-shadow: 0 4px 8px rgba(255,255,255,0.1);
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    justify-content: space-between; /* Space out logo and toggle */
+    padding: 1rem 1.5rem;
+  }
+
+  .logo {
+    justify-content: flex-start; /* Align logo to the start */
+    flex-grow: 1;
+    text-align: left; /* Ensure text within logo aligns left */
+  }
+  
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+
+  .menu-toggle {
+    display: block; /* Show the menu toggle button */
+  }
+
+  .nav-list {
+    display: none; /* Hide nav list by default on mobile */
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 70px; /* Adjust based on header height */
+    left: 0;
+    background: var(--light);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    z-index: 1000;
+    padding: 0;
+  }
+
+  .nav-list.active {
+    display: flex; /* Show nav list when active */
+  }
+
+  .nav-list li {
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+
+  .nav-list li:last-child {
+    border-bottom: none;
+  }
+
+  .nav-list .nav-link {
+    display: block;
+    width: 100%;
+    padding: 1rem 1.5rem;
+  }
+
+  .nav-list .nav-link:hover {
+    background: var(--secondary);
+    color: white;
+  }
+
+  .dropdown-content {
+    position: static; /* Make dropdown content flow naturally */
+    box-shadow: none;
+    background: transparent;
+    width: 100%;
+    padding-left: 1rem;
+  }
+
+  .dropdown-content a {
+    padding: 0.8rem 1.5rem;
+    background: rgba(0,0,0,0.05);
+    border-radius: 0;
+  }
+
+  .dropdown-content a:hover {
+    padding-left: 1.8rem;
+  }
+
+  body.dark-mode .nav-list {
+    background: #1e1e1e;
+  }
+
+  body.dark-mode .nav-list li {
+    border-bottom-color: #333;
+  }
+
+  body.dark-mode .dropdown-content {
+    background: transparent;
+  }
+
+  body.dark-mode .dropdown-content a {
+    background: rgba(255,255,255,0.05);
+  }
+
+  .main {
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+
+  .current-time-display {
+    font-size: 2rem;
+  }
+
+  .footer {
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .sitemap-list {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+  }
+}
+
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">
+    <svg viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="45" fill="none" stroke="white" stroke-width="5"></circle>
+      <line x1="50" y1="50" x2="50" y2="20" stroke="white" stroke-width="5"></line>
+      <line x1="50" y1="50" x2="70" y2="50" stroke="white" stroke-width="5"></line>
+    </svg>
+    <h1>What is today date</h1>
+  </div>
+  <button class="menu-toggle" aria-label="Toggle Navigation Menu">☰</button>
+</header>
+
+<nav class="nav">
+  <ul class="nav-list" role="menu">
+    <li role="none"><a href="https://whatistodaydate.com/" class="nav-link" role="menuitem">Home</a></li>
+    <li class="dropdown" role="none">
+      <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">Today's Date <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-left: 5px;"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+      <div class="dropdown-content" role="menu">
+        <a href="today-date.html" role="menuitem">Today Date</a>
+        <a href="yesterdays-date.html" role="menuitem">Yesterday's Date</a>
+        <a href="tomorrow-date.html" role="menuitem">Tomorrow's Date</a>
+        <a href="current-time.html" role="menuitem">Current Time</a>   
+        <a href="week-number.html" role="menuitem">Week Number</a>
+        <a href="how-many-days-in-a-month.html" role="menuitem">How many days in a month</a>
+        <a href="days-of-the-week.html" role="menuitem">Days of the week</a>
+        <a href="days-left-in-year.html" role="menuitem">Days left in year</a>
+        <a href="next-leap-year.html" role="menuitem">Next leap year</a>
+        <a href="week-number.html" role="menuitem">Week number</a>
+        <a href="9-days-from-today.html" role="menuitem">9 Days from today</a>
+        <a href="10-days-from-today.html" role="menuitem">10 Days from today</a>
+        <a href="28-days-from-toda.html" role="menuitem">28 Days from toda</a>
+        <a href="29-days-from-today.html" role="menuitem">29 Days from today</a>
+        <a href="180-days-from-today.html" role="menuitem">180 Days from today</a>
+        <a href="calendar.html" role="menuitem">Calendar</a>        
+        <a href="world-clock.html" role="menuitem">World Clock</a>
+      </div>
+    </li>
+    <li class="dropdown" role="none">
+      <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">Calculators <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-left: 5px;"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+      <div class="dropdown-content" role="menu">
+        <a href="date-calculator.html" role="menuitem">Date Calculator</a>
+        <a href="days-from-today-calculator.html" role="menuitem">Days From Today Calculator</a>
+        <a href="countdown-timer.html" role="menuitem">Countdown Timer</a>
+        <a href="age-calculator.html" role="menuitem">Age Calculator</a>
+      </div>
+    </li>
+    <li class="dropdown" role="none">
+      <a href="/public-holidays-us.html" class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">Public Holidays <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-left: 5px;"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+      <div class="dropdown-content" role="menu">
+        <a href="public-holidays-us.html" role="menuitem">Public Holidays US</a>
+        <a href="upcoming-holidays-jan-feb.html" role="menuitem">Upcoming Holidays (Jan - Feb)</a>
+        <a href="upcoming-holidays-mar-apr.html" role="menuitem">Upcoming Holidays (Mar - Apr)</a>
+        <a href="upcoming-holidays-may-jun.html" role="menuitem">Upcoming Holidays (May - Jun)</a>
+        <a href="upcoming-holidays-july-august.html" role="menuitem">Upcoming Holidays (July - August)</a>
+        <a href="upcoming-holidays-sep-oct.html" role="menuitem">Upcoming Holidays (Sep - Oct)</a>
+        <a href="upcoming-holidays-nov-dec.html" role="menuitem">Upcoming Holidays (Nov - Dec)</a>
+      </div>
+    </li>
+    <li role="none"><a href="privacy-policy.html" class="nav-link" role="menuitem">Privacy Policy</a></li>
+    <li role="none"><a href="contact.html" class="nav-link" role="menuitem">Contact</a></li>
+    <li role="none"><a href="sitemap.html" class="nav-link" role="menuitem">Sitemap</a></li>
+  </ul>
+</nav>
+
+<main class="main">
+  <h1>Sitemap - All Pages</h1>
+  <p>Get all information using page available on Whatistodaydate.com. You can use this sitemap for easy navigation and to find comprehensive all data on instantly, time, date calculators, public holidays, and more.</p>
+  
+  <ul class="sitemap-list">
+    <li><a href="https://whatistodaydate.com/">Home</a></li>
+    <li><a href="today-date.html">Today's Date</a></li>
+    <li><a href="yesterdays-date.html">Yesterday's Date</a></li>
+    <li><a href="tomorrow-date.html">Tomorrow's Date</a></li>
+    <li><a href="current-time.html">Current Time in United States</a></li>
+    <li><a href="week-number.html">Week Number</a></li>
+    <li><a href="how-many-days-in-a-month.html">How many days in a month</a></li>
+    <li><a href="days-of-the-week.html">Days of the week</a></li>
+    <li><a href="days-left-in-year.html">Days left in year</a></li>
+    <li><a href="next-leap-year.html">Next leap year</a></li>
+    <li><a href="9-days-from-today.html">9 Days from today</a></li>
+    <li><a href="10-days-from-today.html">10 Days from today</a></li>
+    <li><a href="28-days-from-toda.html">28 Days from today</a></li>
+    <li><a href="29-days-from-today.html">29 Days from today</a></li>
+    <li><a href="180-days-from-today.html">180 Days from today</a></li>
+    <li><a href="calendar.html">Calendar</a></li>        
+    <li><a href="world-clock.html">World Clock</a></li>
+    <li><a href="date-calculator.html">Date Calculator</a></li>
+    <li><a href="days-from-today-calculator.html">Days From Today Calculator</a></li>
+    <li><a href="countdown-timer.html">Countdown Timer</a></li>
+    <li><a href="age-calculator.html">Age Calculator</a></li>
+    <li><a href="public-holidays-us.html">Public Holidays US</a></li>
+    <li><a href="upcoming-holidays-jan-feb.html">Upcoming Holidays (Jan - Feb)</a></li>
+    <li><a href="upcoming-holidays-mar-apr.html">Upcoming Holidays (Mar - Apr)</a></li>
+    <li><a href="upcoming-holidays-may-jun.html">Upcoming Holidays (May - Jun)</a></li>
+    <li><a href="upcoming-holidays-july-august.html">Upcoming Holidays (July - August)</a></li>
+    <li><a href="upcoming-holidays-sep-oct.html">Upcoming Holidays (Sep - Oct)</a></li>
+    <li><a href="upcoming-holidays-nov-dec.html">Upcoming Holidays (Nov - Dec)</a></li>
+    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="sitemap.php">sitemap</a></li>
+    <!-- City Time Pages -->
+    <li><a href="/current-time-in-bakersfield-california.html">Current time in Bakersfield</a></li>
+    <li><a href="/current-time-in-chicago-us.html">Current time in Chicago</a></li>
+    <li><a href="/current-time-in-detroit.html">Current time in Detroit</a></li>
+    <li><a href="/current-time-in-louisville.html">Current time in Louisville</a></li>
+    <li><a href="/current-time-in-tucson.html">Current time in Tucson</a></li>
+    <li><a href="/current-time-in-tulsa.html">Current time in Tulsa</a></li>
+    <li><a href="/current-time-in-virginia-beach.html">Current time in Virginia Beach</a></li>
+    <li><a href="/current-time-in-el-paso.html">Current time in El Paso</a></li>
+    <li><a href="/current-time-in-fort-worth-texas.html">Current time in Fort Worth</a></li>
+    <li><a href="/current-time-in-los-angeles.html">Current time in Los Angeles</a></li>
+    <li><a href="/current-time-in-houston.html">Current time in Houston</a></li>
+    <li><a href="/current-time-in-las-vegas.html">Current time in Las Vegas</a></li>
+    <li><a href="/current-time-in-colorado-springs.html">Current time in Colorado Springs</a></li>
+    <li><a href="/current-time-in-mesa.html">Current time in Mesa</a></li>
+    <li><a href="/current-time-in-miami.html">Current time in Miami</a></li>
+    <li><a href="/current-time-in-new-york.html">Current time in New York</a></li>
+    <li><a href="/current-time-in-portland.html">Current time in Portland</a></li>
+    <li><a href="/current-time-in-sacramento.html">Current time in Sacramento</a></li>
+    <li><a href="/current-time-in-indianapolis.html">Current time in Indianapolis</a></li>
+    <li><a href="/current-time-in-jacksonville.html">Current time in Jacksonville</a></li>
+    <li><a href="/current-time-in-kansas-city.html">Current time in Kansas City</a></li>
+    <li><a href="/current-time-in-memphis.html">Current time in Memphis</a></li>
+    <li><a href="/current-time-in-long-beach-california.html">Current time in Long Beach</a></li>
+    <li><a href="/current-time-in-fresno-california.html">Current time in Fresno</a></li>
+    <li><a href="/current-time-in-milwaukee.html">Current time in Milwaukee</a></li>
+    <li><a href="/current-time-in-nashville.html">Current time in Nashville</a></li>
+    <li><a href="/current-time-in-oakland.html">Current time in Oakland</a></li>
+    <li><a href="/current-time-in-philadelphia.html">Current time in Philadelphia</a></li>
+    <li><a href="/current-time-in-phoenix.html">Current time in Phoenix</a></li>
+    <li><a href="/current-time-in-raleigh.html">Current time in Raleigh</a></li>
+    <li><a href="/current-time-in-san-diego.html">Current time in San Diego</a></li>
+    <li><a href="/current-time-in-san-francisco.html">Current time in San Francisco</a></li>
+    <li><a href="/current-time-in-san-jose.html">Current time in San Jose</a></li>
+    <li><a href="/current-time-in-seattle.html">Current time in Seattle</a></li>
+    <li><a href="/current-time-in-washington-dc.html">Current time in Washington DC</a></li>
+    <li><a href="/current-time-in-wichita-kansas.html">Current time in Wichita</a></li>
+    <li><a href="/current-time-in-albuquerque.html">Current time in Albuquerque</a></li>
+    <li><a href="/current-time-in-omaha.html">Current time in Omaha</a></li>
+    <li><a href="/current-time-in-baltimore.html">Current time in Baltimore</a></li>
+    <li><a href="/current-time-in-albuquerque.html">Current time in Albuquerque (Alt)</a></li>
+    <li><a href="/current-time-in-atlanta-usa.html">Current time in Atlanta</a></li>
+    <li><a href="/current-time-in-austin-texas.html">Current time in Austin</a></li>
+    <li><a href="/current-time-in-boston.html">Current time in Boston</a></li>
+    <li><a href="/current-time-in-charlotte.html">Current time in Charlotte</a></li>
+    <li><a href="/current-time-in-columbus-ohio.html">Current time in Columbus</a></li>
+    <li><a href="/current-time-in-dallas-us.html">Current time in Dallas</a></li>
+    <li><a href="/current-time-in-denver-usa.html">Current time in Denver</a></li>
+    <li><a href="/current-time-in-united-states.html">Current time in United States</a></li>
+  </ul>
+</main>
+
+<footer class="footer">
+  <p> 2025 Whatistodaydate. All rights reserved.</p>
+  <a href="https://dateaujourdhui.net/" style="color: white;">Date aujourd'hui</a> - 
+  <a href="https://whatistodaydate.com/sitemap.html" style="color: white;">Sitemap</a>
+</footer>
+
+<button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Dark Mode">
+  <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+    <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75zM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0zm11.394 5.834a.75.75 0 0 1-.082 1.06l-1.591 1.591a.75.75 0 1 1-1.06-1.06l1.591-1.591a.75.75 0 0 1 1.06.082z"></path>
+  </svg>
+</button>
+
+<script>
+// Mobile Menu Toggle
+document.querySelector('.menu-toggle').addEventListener('click', () => {
+  const navList = document.querySelector('.nav-list');
+  navList.classList.toggle('active');
+  const isExpanded = navList.classList.contains('active');
+  document.querySelector('.menu-toggle').setAttribute('aria-expanded', isExpanded);
+});
+
+// Dark Mode Toggle
+const darkModeToggle = document.getElementById('darkModeToggle');
+darkModeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+  // Update aria-label based on mode
+  const currentMode = document.body.classList.contains('dark-mode') ? 'Dark' : 'Light';
+  darkModeToggle.setAttribute('aria-label', `Toggle ${currentMode} Mode`);
+});
+
+// Check for saved dark mode preference
+if (localStorage.getItem('darkMode') === 'true') {
+  document.body.classList.add('dark-mode');
+  darkModeToggle.setAttribute('aria-label', 'Toggle Light Mode');
+} else {
+  darkModeToggle.setAttribute('aria-label', 'Toggle Dark Mode');
+}
+
+// Dropdown accessibility
+document.querySelectorAll('.dropdown > .nav-link').forEach(dropdownToggle => {
+  dropdownToggle.addEventListener('click', function(e) {
+    // Only prevent default if it's a touch/click event on a mobile menu (where dropdown is toggled)
+    // and not a hover on desktop. This is a common pattern for accessible dropdowns.
+    if (window.innerWidth <= 768) { // Assuming 768px is the mobile breakpoint
+      e.preventDefault();
+      const dropdownContent = this.nextElementSibling;
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+      
+      // Close other open dropdowns
+      document.querySelectorAll('.dropdown-content').forEach(content => {
+        if (content !== dropdownContent && content.style.display === 'block') {
+          content.style.display = 'none';
+          content.previousElementSibling.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      // Toggle current dropdown
+      if (isExpanded) {
+        dropdownContent.style.display = 'none';
+        this.setAttribute('aria-expanded', 'false');
+      } else {
+        dropdownContent.style.display = 'block';
+        this.setAttribute('aria-expanded', 'true');
+      }
+    }
+  });
+
+  // Close dropdown if clicked outside - adjusted for mobile
+  document.addEventListener('click', (e) => {
+    // Check if the click is outside any active dropdown or its toggle button
+    const isClickInsideDropdown = dropdownToggle.contains(e.target) || dropdownToggle.nextElementSibling.contains(e.target);
+    const isDropdownActive = dropdownToggle.nextElementSibling.style.display === 'block';
+
+    if (!isClickInsideDropdown && isDropdownActive) {
+      dropdownToggle.nextElementSibling.style.display = 'none';
+      dropdownToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+});
+
+// Close mobile menu when a nav link or dropdown item is clicked
+document.querySelectorAll('.nav-list a').forEach(link => {
+  link.addEventListener('click', () => {
+    if (window.innerWidth <= 768) {
+      document.querySelector('.nav-list').classList.remove('active');
+      document.querySelector('.menu-toggle').setAttribute('aria-expanded', 'false');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
